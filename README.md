@@ -22,3 +22,7 @@ To view all notes or events for a specific day, follow these steps:
   - The events of a particular day are recorded automatically for subsequent years
   - The presence of notes, events and a timer is marked in the calendar with the appropriate labels
   - If there is less than one day left, the timer and its mark start flashing
+  
+### Example:
+  
+![alt tag](https://github.com/Aleonira/pretty-notes-calendar/blob/342985e18d7d2a37eec8f6cd069bf898bac801c0/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA.JPG)
