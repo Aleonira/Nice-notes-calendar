@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="libs/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <link rel="stylesheet" href="fonts/nunitosans/nunitosans.css">
+</head>
+<body>
+    <div class="basic_wrapper block">
+        <div id="calendar_section" class="calendar_section">
+        </div>
+        <div class="list_wrapper">
+            <div class="to-do-item_wrapper" id="to-do-item_wrapper">
+                <div class="to-do-item">
+                    <div class="birthday_button">
+                        <h4 class="date_tittle"></h4>
+                        <i class="fas fa-gift" id="birthday_button"></i>
+                    </div>
+                    <h1>Створити замітку</h1>
+                    <div class="form-group tittle">
+                        <label for="title-to-do-list">Заголовок</label>
+                        <input type="text" class="tittle_input" id="title-to-do-list" maxlength="50">
+                    </div>
+                    <div class="form-group description">
+                        <label for="description-to-do-list">Описання</label>
+                        <textarea class="" id="description-to-do-list" rows="4" maxlength="204"></textarea>
+                    </div>
+                    <div id="time_wrapper" class="time_wrapper">
+                        <div id="time_button">
+                            <i class="far fa-clock time_button"></i>
+                        </div>
+                        <div class="form-group time">
+                            <input type="number" class="form-control" id="hour-to-do-list" value="23" onKeyPress="if(this.value.length>1) return false;" >
+                            <p>:</p>
+                            <input type="number" class="form-control" id="minute-to-do-list" value="59" maxlength="2" onKeyPress="if(this.value.length>1) return false;">
+                        </div>
+                    </div>
+                    <button id="create-to-do-item" class="btn btn-primary">Добавити</button>
+                    <button id="close-to-do-item" class="btn btn-primary">Закрити</button>
+                </div>
+            </div>
+            <div class="list_block" id="list_block">
+                    <div class="wrapper-to-do">
+                    </div>
+            </div>
+            <div class="birthday_block" id="birthday_block">
+                    <div class="wrapper-birthday">
+                    </div>
+            </div>
+        </div>
+    </div>
+    <! --div class="burger_block">
+        <! --button class="burger"><! --/button>
+    <! --/div-->
+    <div id="menu_button_block" class="menu_button_block">
+        <div id="see_calendar_button" class="menu_button" onclick="buttonMenu('calendar_section')">
+            <i class="fas fa-calendar-alt"></i>
+            <p>Календар</p>
+        </div>
+        <div id="add_list_button" class="menu_button" onclick="buttonMenu('to-do-item_wrapper')">
+            <i class="fas fa-pencil-alt"></i>
+            <p>Створити</p>
+        </div>
+        <div id="see_list_button" class="menu_button" onclick="buttonMenu('list_block')">
+            <i class="fas fa-clipboard-list"></i>
+            <p>Переглянути замітки</p>
+        </div>
+        <div id="see_birthday_button" class="menu_button" onclick="buttonMenu('birthday_block')">
+            <i class="fas fa-gift"></i>
+            <p>Переглянути події</p>
+        </div>
+    </div>
+
+    <script src="js/ToDo.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/calendar.js"></script>
+
+</body>
+</html>
