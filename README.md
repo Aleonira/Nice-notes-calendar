@@ -1,6 +1,7 @@
-# Pretty-notes-calendar
+# Nice-notes-calendar
 
-Pretty-notes-calendar is simple and convenient web application which is an electronic calendar for planning meetings, affairs and events for every day.
+Nice-notes-calendar is simple and convenient web application which is an electronic calendar for create notes and events for every day.
+With it, you can set yourself tasks for every day, plan meetings and affairs, keep track of pre-existing events.
 
 ### How to use:
 
@@ -9,7 +10,7 @@ To create a note or event you need:
   - Select the desired date for any month and year.
   - In the menu that appears, click the “Add” button.
   - To create an event, in the creation form, click on the button in the form of a gift
-  - To add a timer, in the creation form, click on the button in the form of
+  - To add a timer, in the creation form, click on the button in the form of a clock
   - A note or event will be added on the corresponding day of the calendar.a 
  
 To view all notes or events for a specific day, follow these steps:
